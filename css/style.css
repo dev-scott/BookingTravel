@@ -168,11 +168,12 @@ body .hero .book_section .inner_book .book-btn a i {
 }
 body .vide {
   width: 100%;
-  height: 15vh;
+  height: 10vh;
 }
 body .popular_destination {
   width: 100%;
-  height: 50vh;
+  height: 600px;
+  background-color: #2667FF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,9 +184,8 @@ body .popular_destination .header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0.9rem 1.6rem;
   width: 100%;
-  height: 30%;
+  height: 20%;
 }
 body .popular_destination .header span {
   font-size: 18px;
@@ -196,10 +196,285 @@ body .popular_destination .header span {
 body .popular_destination .header h1 {
   font-size: 29px;
   font-family: "Quicksand", sans-serif;
-  color: rgba(73, 95, 174, 0.7921568627);
+  color: white;
 }
-body .popular_destination .destination_container {
+body .popular_destination .slider_container {
+  max-width: 1120px;
+  width: 100%;
+}
+body .popular_destination .slider_container .slide-content {
+  margin: 0 40px;
+}
+body .popular_destination .slider_container .slide-content .card-wrapper .card {
+  border-radius: 20px;
+  background-color: #1D2F6F;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 11px 11px -6px rgba(0, 0, 0, 0.48);
+  -webkit-box-shadow: 1px 11px 11px -6px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 1px 11px 11px -6px rgba(0, 0, 0, 0.48);
+}
+body .popular_destination .slider_container .slide-content .card-wrapper .card .image-content {
+  position: relative;
+  height: 70%;
+  width: 100%;
+}
+body .popular_destination .slider_container .slide-content .card-wrapper .card .image-content img {
+  height: 100%;
+  width: 100%;
+}
+body .popular_destination .slider_container .slide-content .card-wrapper .card .card-content {
+  width: 100%;
+  height: 30%;
+  background-color: white;
+  color: black;
+  padding: 0.4rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+body .popular_destination .slider_container .slide-content .card-wrapper .card .card-content span {
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+body .popular_destination .slider_container .slide-content .card-wrapper .card .card-content h2 {
+  margin-bottom: 10px;
+}
+body .popular_destination .slider_container .slide-content .card-wrapper .card .card-content .note {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+body .popular_destination .slider_container .slide-content .card-wrapper .card .card-content .note .secondNote span {
+  color: #3B28CC;
+}
+body .popular_destination .slider_container .slide-content .card-wrapper .card .card-content .note .secondNote span i {
+  color: #3B28CC;
+}
+body .service {
+  margin-top: 60px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .service .left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+body .service .left .image {
+  width: 60%;
+  height: 100%;
+  border-radius: 30px;
+  padding-right: 20px;
+}
+body .service .left .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+}
+body .service .right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+body .service .right .center {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .service .right .center .header {
+  width: 100%;
+  height: 30%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+body .service .right .center .header::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  border-radius: 10px;
+  height: 5px;
+  width: 60px;
+  background-color: #3B28CC;
+}
+body .service .right .center .header span {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: rgba(29, 30, 35, 0.631372549);
+}
+body .service .right .center .header h1 {
+  font-family: "Quicksand", sans-serif;
+  color: rgba(29, 30, 35, 0.631372549);
+  font-size: 33px;
+}
+body .service .right .center .content {
   width: 100%;
   height: 70%;
-  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+body .service .right .center .content .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+body .service .right .center .content .card .image {
+  width: 20%;
+  height: 100%;
+  background-color: rgba(174, 179, 184, 0.516);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .service .right .center .content .card .image i {
+  font-size: 24px;
+  color: #3B28CC;
+}
+body .service .right .center .content .card .text {
+  margin-right: 40px;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+body .service .right .center .content .card .text h1 {
+  color: rgba(25, 34, 68, 0.6705882353);
+  font-size: 22px;
+}
+body .service .right .center .content .card .text p {
+  color: rgba(29, 47, 111, 0.4941176471);
+  font-family: "Fredoka One", cursive;
+}
+body .destination_inspiration {
+  margin-top: 50px;
+  width: 100%;
+  height: 500px;
+}
+body .destination_inspiration h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 22px;
+  color: rgba(29, 30, 35, 0.631372549);
+}
+body .destination_inspiration .contain_inspiration {
+  margin: 0 auto;
+  width: 80%;
+  height: 400px;
+  display: grid;
+  grid-template-areas: "card1 car2 car3" "card1 card4 car5";
+  grid-gap: 10px;
+}
+body .destination_inspiration .contain_inspiration .card {
+  background-color: rgba(28, 24, 24, 0.759);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+body .destination_inspiration .contain_inspiration .card:hover .card_text {
+  transform: translateY(0);
+  bottom: 0;
+}
+body .destination_inspiration .contain_inspiration .card .img {
+  width: 100%;
+  height: 100%;
+}
+body .destination_inspiration .contain_inspiration .card .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body .destination_inspiration .contain_inspiration .card .card_text {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.389);
+  z-index: 10;
+  bottom: 0;
+  transform: translateY(100px);
+  transition: all ease 0.5s;
+  padding: 2rem 1rem;
+}
+body .destination_inspiration .contain_inspiration .card .card_text p {
+  color: white;
+}
+body .destination_inspiration .contain_inspiration .card1 {
+  grid-area: card1;
+}
+body .footer {
+  border-top: 1px solid rgba(25, 34, 68, 0.0784313725);
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+body .footer .logo {
+  height: 100%;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .footer .logo h1 {
+  font-size: 28px;
+  color: rgba(25, 34, 68, 0.6705882353);
+  margin-right: 40px;
+  font-family: "Fredoka One", cursive;
+}
+body .footer ul {
+  list-style: none;
+  width: 23%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+}
+body .footer ul li a {
+  text-decoration: none;
+  color: rgba(25, 34, 68, 0.6705882353);
+}
+body .footer .social {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .footer .social span {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
