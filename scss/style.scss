@@ -102,19 +102,21 @@ body {
     .fondu-out {
         opacity: 0;
         transition: opacity 0.4s ease-out;
+        display: none;
+        transform: translateY(-200vh);
     }
 
 
     .loader {
 
         position: absolute;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #1D2F6F;
-        z-index: 10;
+        z-index: 50;
         overflow: hidden;
 
 
@@ -305,6 +307,8 @@ body {
                     border-radius: 5px;
                     background-color: white;
                     padding: 0.6rem 1.2rem;
+                    z-index: 10;
+
                 }
 
                 .book-btn {
