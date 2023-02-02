@@ -19,6 +19,7 @@ body {
 
     width: 100%;
     height: 100vh;
+    position: relative;
 
     header {
 
@@ -92,6 +93,103 @@ body {
 
 
             }
+        }
+
+    }
+
+
+    .fondu-out {
+        opacity: 0;
+        transition: opacity 0.4s ease-out;
+    }
+
+
+    .loader {
+
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1D2F6F;
+        z-index: 10;
+        overflow: hidden;
+
+
+
+        span {
+
+            color: #3B28CC;
+            font-size: 80px;
+            letter-spacing: 15px;
+
+            animation: flash 1.2s linear infinite;
+
+            &:nth-child(1) {
+                animation-delay: 0.1s;
+
+            }
+
+
+            &:nth-child(2) {
+                animation-delay: 0.2s;
+
+
+            }
+
+            &:nth-child(3) {
+                animation-delay: 0.3s;
+
+            }
+
+            &:nth-child(4) {
+                animation-delay: 0.4s;
+
+            }
+
+            &:nth-child(5) {
+                animation-delay: 0.5s;
+
+            }
+
+            &:nth-child(6) {
+                animation-delay: 0.6s;
+
+            }
+
+            &:nth-child(7) {
+                animation-delay: 0.7s;
+
+            }
+
+
+
+
+        }
+
+        @keyframes flash {
+
+            0% {
+
+                color: #3B28CC;
+                text-shadow: 0 0 7px #fff900;
+
+
+            }
+
+            90% {
+                color: #484848;
+                text-shadow: none;
+            }
+
+            100% {
+                color: #3B28CC;
+                text-shadow: 0 0 7px #fff900;
+
+
+            }
+
         }
 
     }
