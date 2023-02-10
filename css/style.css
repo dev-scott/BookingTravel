@@ -227,6 +227,87 @@ body .hero .book_section .inner_book .book-btn {
 body .hero .book_section .inner_book .book-btn a i {
   color: white;
 }
+body .contain_item {
+  width: 100%;
+  height: min-content;
+  padding: 1rem 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+body .contain_item .item {
+  box-shadow: -2px 10px 29px -12px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 10px 29px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 10px 29px -12px rgba(0, 0, 0, 0.75);
+  max-width: 400px;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  position: relative;
+}
+body .contain_item .item .header {
+  width: 100;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .contain_item .item .header .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .contain_item .item .header .left img {
+  width: 13px;
+  height: auto;
+}
+body .contain_item .item .header .left h1 {
+  font-size: 15px;
+  margin-left: 10px;
+  color: #484848;
+}
+body .contain_item .item .header .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .contain_item .item .header .right span {
+  color: #2667FF;
+}
+body .contain_item .item .trajet {
+  padding: 0 3rem;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .contain_item .item .trajet .tiret {
+  background-color: #484848;
+  max-width: 60px;
+  width: 100%;
+  height: 2px;
+}
+body .contain_item .item .trajet .prix_trajet {
+  max-width: 80px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #2667FF;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body .contain_item .item .more {
+  position: absolute;
+  bottom: 8%;
+  left: 8%;
+  cursor: pointer;
+}
 body .vide {
   width: 100%;
   height: 10vh;
